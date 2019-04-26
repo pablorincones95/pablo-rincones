@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__icon-mobile { align-self: center; padding: 1rem 0 1rem 1rem; font-size: 2rem; z-index: 10000;
+
+    @include mq(m) {
+      display: none;
+    }
+  }
+
+  &__logo { flex: 2; align-self: center; text-align: center; padding: .8rem 0; margin-left: -45px;
+
+
+    @include mq(m) {
+      flex: 0.5;
+      margin-left: 0;
+    }
+  }
+
+  &__menu {
+    z-index: -1;
+    margin-top: -100vh;
+    width: 100%;
+    text-align: center;
+    transition: margin-top 1s ease-out;
+
+    &.is-active {
+      margin-top: 0;
+      z-index: 1;
+    }
+
+    ul {
+      @include mq(m) {
+        display: flex;
+      }
+    }
+
+    @include mq(m) {
+      flex: 2;
+      width: auto ;
+      z-index: 1;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 1rem;
+
+    }
+
+    &__link { display: block; padding: .5rem 0;
+
+      @include mq(m) {
+        padding: 1rem;
+      }
+    }
+  }
+}

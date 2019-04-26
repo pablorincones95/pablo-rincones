@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/particles.min.js",
+              "src/assets/js/function.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

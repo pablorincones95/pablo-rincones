@@ -1,0 +1,46 @@
+/* ********** Custom Properties ********** */
+:root {
+  --main-font: 'Raleway';
+  --alternate-font: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+
+  --white: #FFFFFF;
+  --main-color: #000014;
+  --main-modal-color: rgb(255, 255, 255, .75);
+  --second-color: #FF00FF;
+  --second-modal-color: rgba(0, 0, 0, .75);
+  --alternate-color: #00FFFF;
+  --alternate-modal-color: rgb(57, 181, 74, .75);
+
+  --bg-color: var(--main-color);
+  --bg-modal-color: var(--main-modal-color);
+  --bg-alternate-color: #999;
+  --bg-alternate-modal-color: rgba(153, 153, 153, .75);
+  --border-color: #DDD;
+
+  --text-color: #242424;
+  --title-color: #333;
+
+  --link-color: var(--second-color);
+  --link-hover-color: var(--alternate-color);
+
+  --max-width: 1200px;
+  --header-height: 5rem;
+
+  --logo-width: 4rem;
+  --logo-height: 4rem;
+  --logo-spacing: .5rem;
+  --shadow-1: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  --shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+  --shadow-img: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+/* ********** Variables ********** */
+$breakpoints: (
+  xs: 30em, /* 480 / 16  */
+  s: 37.5em, /* 600 / 16  */
+  m: 45em, /* 720 / 16 */
+  l: 64em, /* 1024 / 16 */
+  xl: 75em /* 1200/ 16 */
+);

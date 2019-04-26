@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/** Utils **/
+@import 'assets/scss/utils/_variables';
+@import 'assets/scss/utils/mixins';
+@import 'assets/scss/base/_reset';
+@import 'assets/scss/utils/helpers';
+
+/** Layouts **/
+@import 'assets/scss/layout/_navbar';
+
+/** Components **/
+@import 'assets/scss/components/_navbar';
