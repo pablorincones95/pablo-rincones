@@ -1,0 +1,186 @@
+.card {
+  position: relative;
+  width: 385px;
+  height: auto;
+  border-radius: .5rem;
+  padding: 2rem;
+  box-shadow: $shadow;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  background-color: $mainColor;
+
+  &.--simple {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+    h4 {
+      font-size: 6rem;
+      color: $secondColor;
+      text-align: center;
+    }
+
+    p {
+      color: $thirdColor;
+    }
+
+  }
+
+  &:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: $shadowImg;
+  }
+
+  &__image-container {
+    margin: -2rem -2rem 1rem -2rem;
+  }
+
+  &__line {
+  opacity: 0;
+  animation: LineFadeIn .8s .8s forwards ease-in;
+  }
+
+  &__image {
+    opacity: 0;
+    animation: ImageFadeIn .8s 1.4s forwards;
+  }
+
+  &__title {
+    color: $white;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
+  &__content {
+    margin-top: -2rem;
+    opacity: 0;
+    animation: ContentFadeIn .8s 1.6s forwards;
+    color: $thirdColor;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    left: 0;
+    top: 110px;
+  }
+
+  .btn {
+    color: $white;
+    padding: 15.5px 22px;
+
+    &:before { background: $secondColor; }
+
+    svg { stroke: $white; }
+
+    &:hover {
+      color: $white;
+
+      &:before { background: $secondColor; }
+
+      svg { stroke: $white; }
+
+    }
+
+  }
+
+}
+
+@keyframes LineFadeIn {
+  0% { opacity: 0; d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "); stroke: #fff; }
+  50% { opacity: 1; d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"); stroke: #888BFF; }
+  100% { opacity: 1; d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"); stroke: #545581; }
+}
+
+@keyframes ContentFadeIn {
+  0% { transform: translateY(-1rem); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes ImageFadeIn {
+  0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
+  50% { opacity: 1; filter: blur(2px); }
+  100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+}
+
+
+// base
+.card-flip {
+    position: relative;
+    >.front,
+    >.back {
+        display: block;
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: 2.5s;
+        transition-property: transform, opacity;
+    }
+    >.front {
+        transform: rotateY(0deg);
+    }
+    >.back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+    &:hover {
+        >.front {
+            transform: rotateY(180deg);
+        }
+        >.back {
+            opacity: 1;
+            transform: rotateY(0deg);
+            box-shadow: $shadowHover;
+        }
+    }
+    &.--vertical {
+        >.back {
+            transform: rotateX(-180deg);
+        }
+        &:hover {
+            >.front {
+                transform: rotateX(180deg);
+            }
+            >.back {
+                transform: rotateX(0deg);
+            }
+        }
+    }
+}
+
+// custom
+.card-flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+    >.front,
+    >.back {
+      display: block;
+      color: white;
+      background-size: cover!important;
+      background-position: center!important;
+      height: 300px;
+      padding: 2rem;
+      background: #313131;
+      border-radius: .8rem;
+      box-shadow: $shadow;
+      p {
+        font-size: 0.9125rem;
+        line-height: 160%;
+        color: #999;
+      }
+    }
+}
+
+.text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}

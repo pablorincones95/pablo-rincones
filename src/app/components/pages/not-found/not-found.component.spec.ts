@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundAnimatedComponent } from './background-animated.component';
+import { NotFoundComponent } from './not-found.component';
 
-describe('BackgroundAnimatedComponent', () => {
-  let component: BackgroundAnimatedComponent;
-  let fixture: ComponentFixture<BackgroundAnimatedComponent>;
+describe('NotFoundComponent', () => {
+  let component: NotFoundComponent;
+  let fixture: ComponentFixture<NotFoundComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BackgroundAnimatedComponent ]
+      declarations: [ NotFoundComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BackgroundAnimatedComponent);
+    fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

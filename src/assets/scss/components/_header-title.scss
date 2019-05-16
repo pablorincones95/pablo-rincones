@@ -1,0 +1,25 @@
+.header-title {
+  color: var(--white);
+
+  h1 { font-size: 3.75rem; }
+
+  span { font-size: 1.5625rem; margin-bottom: 2rem; }
+
+  .btn {
+    color: $white;
+
+    &:before { background: $secondColor; }
+
+    svg { stroke: $white; }
+
+    &:hover {
+      color: $white;
+
+      &:before { background: $secondColor; }
+
+      svg { stroke: $white; }
+
+    }
+
+  }
+}

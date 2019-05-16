@@ -1,0 +1,27 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	align-content: center;
+  height: 300px;
+  text-align: center;
+
+  h4 {
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  .btn {
+    color: $white;
+
+    svg { stroke: $white; }
+
+    &:hover {
+      color: $white;
+
+      svg { stroke: $white; }
+    }
+
+  }
+}

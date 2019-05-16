@@ -1,3 +1,280 @@
-<div id="particles-js">
-  <h1>Desarrolador we</h1>
+<section class="particles-js" id="particles-js">
+
+  <div class="container">
+    <div class="row text-particles --column header-title">
+      <h1>Pablo Rincones</h1>
+      <span>Desarollador Web</span>
+      <a class="btn" [routerLink]="['/portafolio']"><span>ver mi Portafolio</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg></a>
+    </div>
+  </div>
+
+</section>
+
+<div class="skew-c"></div>
+
+<section id="about-me" class="colour-block">
+
+  <div class="container">
+
+    <h2>Sobre mi</h2>
+
+    <div class="about-me row --space-between">
+
+      <img class="about-me__img" src="assets/img/astronauta-planeta.svg" alt="ilustracion de un astronauta en un planeta">
+
+      <div class="about-me__text">
+
+        <p>
+          Mi nombre es Pablo Rincones soy desarrollador web tengo experiecia para pequeñas y medianas empresas, hasta tiendas en linea con carritos de compra(WooCommerce).
+        </p>
+
+        <p>
+          Me aseguro de utilizar siempre las ultimas tecnologías de desarrollo web: HTML5, CSS3, Javascript, Wordpress y entre otros. Si necesitasuna pagina web moderna o app web, funcional que se adapte a todos los diferentes tipos de pantallas te aseguro que llegaste al lugar correcto.
+        </p>
+
+        <p>
+          Puedes ponerte en contacto conmigo a traves de Facebook y otras redes sociales o por el formulario que esta ubicado en la pagina de contacto.
+        </p>
+
+        <div>
+          <a [routerLink]="['/acerca-de-mi']" class="btn">
+            <span>Ver mas</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<div class="skew-cc"></div>
+
+<section class="white-block" id="services">
+
+  <h2>Servicios</h2>
+
+  <div class="container">
+
+    <div class="row --space-between --wrap">
+
+      <div class="card">
+
+        <div class="card__image-container">
+          <img class="card__image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80" alt="">
+        </div>
+
+        <svg class="card__svg" viewBox="0 0 800 500">
+          <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#1D2540"/>
+          <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+        </svg>
+
+        <div class="card__content">
+          <h1 class="card__title">Desarrollo web</h1>
+          <p>
+            Desarrollo web de paginas web y aplicaciones web modernas con las ultimas tecnologías y diseño responsivo, adaptadas a sus necesidades como como tiendas online y mas.
+          </p>
+          <a [routerLink]="['/servicios']" class="btn">
+            <span>Ver mas</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="card">
+          <div class="card__image-container">
+            <img class="card__image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80" alt="">
+          </div>
+
+          <svg class="card__svg" viewBox="0 0 800 500">
+
+            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#1D2540"/>
+            <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+          </svg>
+
+          <div class="card__content">
+            <h1 class="card__title">Admistracion y mantenimiento</h1>
+            <p>
+              Administracion de sus paginas y aplicaciones web, mantenimiento o cambios que necesite hacer y la velociada de respuesta.
+            </p>
+            <a [routerLink]="['/servicios']" class="btn">
+                <span>Ver mas</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card__image-container">
+              <img class="card__image" src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80" alt="">
+            </div>
+
+            <svg class="card__svg" viewBox="0 0 800 500">
+
+              <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#1D2540"/>
+              <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+            </svg>
+
+            <div class="card__content">
+              <h1 class="card__title">SEO y Asesorias</h1>
+              <p>
+                Posicionamiento de su pagina web con seo organico y seo sem, asesaorias de como manejar su pagina y aplicacion web como que tecnologías debe utilizar que se adapte a su necesida etc.
+              </p>
+              <a [routerLink]="['/servicios']" class="btn">
+                  <span>Ver mas</span>
+                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+              </a>
+            </div>
+          </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="skew-c"></div>
+
+<section class="colour-block">
+    <h2>¿Por qué trabajar conmigo?</h2>
+
+    <div class="container">
+
+      <div class="row --space-between --wrap">
+
+        <div class="container-icon">
+          <img src="assets/img/technical-support.svg" alt="imagen referente al mantenimiento web">
+          <h4>Mantenimiento</h4>
+          <p>Mantenimiento a paginas y aplicaciones Web o cambios que quieran hacer.</p>
+        </div>
+
+        <div class="container-icon">
+          <img src="assets/img/computer.svg" alt="icono referente a un telefono movil">
+          <h4>Responsive</h4>
+          <p>Diseño adaptable para todos los dispositivos.</p>
+        </div>
+
+        <div class="container-icon">
+          <img src="assets/img/web-management.svg" alt="icono referenta al wordpress">
+          <h4>Autoadminstrable</h4>
+          <p>Paginas web autoadministrable con wordpress.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<div class="skew-cc"></div>
+
+<section id="portafolio" class="white-block" >
+
+  <h2>Portafolio</h2>
+
+  <div class="container">
+
+    <div class="row --space-between --wrap">
+
+      <div class="card-flip">
+        <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+         <h1 class="text-shadow">MOUNTAIN</h1>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>
+            Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">LAKE</h1>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..</p>
+    </div>
 </div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">OCEAN</h1>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..</p>
+    </div>
+</div> -->
+
+  <div class="card-flip --vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">FOREST</h1>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..</p>
+    </div>
+</div>
+
+
+<!-- <div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">TRACK</h1>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">SWAMP</h1>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everyth1ng by hand..</p>
+    </div>
+</div> -->
+
+    </div>
+  </div>
+
+</section>
+
+<div class="skew-c"></div>
+
+
+<section class="cta colour-block">
+
+  <h4>¿Que esperas para tener tu pagina web?</h4>
+  <a [routerLink]="['/contactame']" class="btn">
+      <span>contactar</span>
+      <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+    </a>
+
+</section>
+
+<div class="skew-cc"></div>

@@ -1,17 +1,63 @@
 /* ********** Custom Properties ********** */
+/* Color Theme Swatches in Hex */
+//#BF3F57
+$secondColor: #ea1d6f;
+$Adam-Barnes-Cover-2-hex: #3E518C;
+$Adam-Barnes-Cover-3-hex: #324373;
+$mainColor: #1D2540;
+$thirdColor: #939EBF;
+$white: #FFFFFF;
+$fontSize: 1rem;
+$shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+$shadowHover: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+$shadowImg: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+
+$social-button-radius: 70px;
+$social-button-icon-size: 0.4;
+$social-button-background: #fff;
+$social-button-active-color: #fff;
+$social-button-transition-time: 0.3s;
+
+$social-button-colors: (
+  "mail": #0072c6,
+  "facebook": #3b5999,
+  "linkedin": #0077b5,
+  "github": #6e5494,
+  "codepen": #212121,
+  "steam": #7da10e,
+  "snapchat":#eec900,
+  "twitter": #55acee,
+  "instagram": #e4405f,
+  "npmjs": #c12127
+);
+
+/* Color Theme Swatches in RGBA */
+$Adam-Barnes-Cover-1-rgba: rgba(191,63,86, 1);
+$Adam-Barnes-Cover-2-rgba: rgba(61,81,140, 1);
+$Adam-Barnes-Cover-3-rgba: rgba(50,66,114, 1);
+$Adam-Barnes-Cover-4-rgba: rgba(28,37,63, 1);
+$Adam-Barnes-Cover-5-rgba: rgba(147,158,191, 1);
+
+/* Color Theme Swatches in HSLA */
+$Adam-Barnes-Cover-1-hsla: hsla(348, 50, 49, 1);
+$Adam-Barnes-Cover-2-hsla: hsla(225, 38, 39, 1);
+$Adam-Barnes-Cover-3-hsla: hsla(225, 38, 32, 1);
+$Adam-Barnes-Cover-4-hsla: hsla(225, 37, 18, 1);
+$Adam-Barnes-Cover-5-hsla: hsla(225, 25, 66, 1);
+
+
 :root {
-  --main-font: 'Raleway';
-  --alternate-font: sans-serif;
+  --main-font: 'Source Code Pro';
+  --alternate-font: monospace;
   --font-size: 16px;
   --line-height: 1.6;
 
   --white: #FFFFFF;
-  --main-color: #000014;
-  --main-modal-color: rgb(255, 255, 255, .75);
-  --second-color: #FF00FF;
-  --second-modal-color: rgba(0, 0, 0, .75);
-  --alternate-color: #00FFFF;
-  --alternate-modal-color: rgb(57, 181, 74, .75);
+  --main-color: #232741;
+  --main-color-hover: #363c63;
+  --second-color: #033b92;
+  --second-color-hover: #0445af;
+  --alternate-color: #BF3F57;
 
   --bg-color: var(--main-color);
   --bg-modal-color: var(--main-modal-color);
@@ -31,9 +77,6 @@
   --logo-width: 4rem;
   --logo-height: 4rem;
   --logo-spacing: .5rem;
-  --shadow-1: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-  --shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
-  --shadow-img: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 }
 
 /* ********** Variables ********** */

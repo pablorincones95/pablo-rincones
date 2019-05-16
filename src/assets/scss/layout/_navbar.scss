@@ -5,19 +5,16 @@
   flex-wrap: wrap;
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
   z-index: 1030;
+  width: 100%;
 
-  @include mq(m) { flex: 1 1 0; padding: 1rem 1.2rem; }
+  @include mq(m) { flex: 1 1 0; padding: 1rem 2rem; }
 
   &__btn { flex: 0; @include mq(m) { display: none; } }
 
   &__brand {
     flex: 1;
-    text-align: center;
-    margin-left: -5px;
-    align-self: center;
+    // margin-left: -5px;
   }
 
   &__menu {

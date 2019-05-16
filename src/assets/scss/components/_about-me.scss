@@ -1,0 +1,29 @@
+.about-me {
+  &__img {
+    border-radius: .8rem;
+    margin-bottom: 1rem;
+    box-shadow: $shadowImg;
+    @include mq(m) { flex: 1; }
+  }
+
+  &__text {
+    text-align: justify;
+    @include mq(m) { flex: 1; padding: 1rem 2rem; }
+    p {
+      margin-bottom: .7rem;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+
+      @include mq(m) { margin-top: 2rem; }
+
+      .btn {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}

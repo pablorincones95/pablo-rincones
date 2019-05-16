@@ -3,10 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+/** Components **/
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { BackgroundAnimatedComponent } from './components/background-animated/background-animated.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { ServicesComponent } from './components/pages/services/services.component';
+import { PortafolioComponent } from './components/pages/portafolio/portafolio.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
+import { AboutMeComponent } from './components/pages/about-me/about-me.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { ItemComponent } from './components/pages/portafolio/item/item.component';
 
 
 @NgModule({
@@ -14,8 +21,13 @@ import { HomeComponent } from './components/pages/home/home.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BackgroundAnimatedComponent,
     HomeComponent,
+    ServicesComponent,
+    PortafolioComponent,
+    ContactComponent,
+    AboutMeComponent,
+    NotFoundComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,

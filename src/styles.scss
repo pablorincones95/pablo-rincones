@@ -1,12 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 /** Utils **/
-@import 'assets/scss/utils/_variables';
+@import 'assets/scss/utils/variables';
 @import 'assets/scss/utils/mixins';
-@import 'assets/scss/base/_reset';
+@import 'assets/scss/base/base';
 @import 'assets/scss/utils/helpers';
 
 /** Layouts **/
-@import 'assets/scss/layout/_navbar';
+@import 'assets/scss/layout/grid';
+@import 'assets/scss/layout/navbar';
+@import 'assets/scss/layout/footer';
 
 /** Components **/
-@import 'assets/scss/components/_navbar';
+@import 'assets/scss/components/navbar';
+@import 'assets/scss/components/particles';
+@import 'assets/scss/components/header-title';
+@import 'assets/scss/components/button';
+@import 'assets/scss/components/about-me';
+@import 'assets/scss/components/services';
+@import 'assets/scss/components/card';
+@import 'assets/scss/components/container-icon';
+@import 'assets/scss/components/cta';
+@import 'assets/scss/components/form';
+@import 'assets/scss/components/footer';
+
+/** Pages **/
+@import 'assets/scss/pages/home';
+@import 'assets/scss/pages/portafolio';

@@ -1,6 +1,7 @@
+const d = document;
+
 function  toggleNav() {
-  const d = document,
-    navbarBtn = d.querySelector('.navbar__btn'),
+  const navbarBtn = d.querySelector('.navbar__btn'),
     navbar = d.querySelector('.navbar'),
     mobileMenu = d.querySelector('.navbar__menu'),
     main = d.querySelector('.Main');
@@ -22,4 +23,34 @@ function  toggleNav() {
   });
 }
 
+window.onscroll = () => {menuScroll()};
+
+const  menuScroll = () => {
+  let menu = d.querySelector('.navbar');
+
+  if (d.body.scrollTop > 100 || d.documentElement.scrollTop > 100) {
+    menu.classList.add('--scroll');
+  } else {
+    menu.classList.remove('--scroll');
+  }
+}
+
+// const headerTitleHTML = () => {
+//   return `
+//     <div class="row --column">
+//       <h1>Pablo Rincones</h1>
+//       <span>Desarollador Web</span>
+//       <a href="">Ver mis trabajos</a>
+//     </div>
+//   `;
+// }
+
+// const headerTitle = () => {
+
+//   const canvas = d.querySelector('.particles-js-canvas-el');
+//   let div = d.createElement('div');
+//   div.classList.add('container');
+//   div.innerHTML = headerTitleHTML();
+//   canvas.insertAdjacentElement('afterbegin', div);
+// }
 
