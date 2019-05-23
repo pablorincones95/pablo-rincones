@@ -1,3 +1,13 @@
 .text-particles{
   margin-bottom: 40px;
 }
+
+.card {
+
+  &__image {
+    opacity: 0;
+    animation: ImageFadeIn .8s 1.4s forwards;
+    height: 309px;
+  }
+
+}

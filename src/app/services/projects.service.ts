@@ -15,7 +15,7 @@ export class ProjectsService {
   project: Observable<Project>;
 
   constructor( private db: AngularFirestore ) {
-    this.projectsColletion = db.collection<Project>('projects');
+    this.projectsColletion = db.collection<Project>('proyects', ref => ref.orderBy('create', 'desc'));
   }
 
   getProjects(): Observable<Project[]> {

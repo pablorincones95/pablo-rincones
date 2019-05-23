@@ -61,6 +61,12 @@
     p {
       margin-bottom: 1rem;
     }
+
+    .technology {
+      span {
+        color: $secondColor;
+      }
+    }
   }
 
   &__svg {

@@ -24,6 +24,9 @@ import { AboutMeComponent } from './components/pages/about-me/about-me.component
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ItemComponent } from './components/pages/portafolio/item/item.component';
 
+/** Services */
+import { ProjectsService } from './services/projects.service';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { ItemComponent } from './components/pages/portafolio/item/item.component
     AngularFireAuthModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ProjectsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
