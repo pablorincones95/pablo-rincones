@@ -9,11 +9,12 @@
   overflow: hidden;
   transition: all 1s ease-in-out;
   background-color: $mainColor;
+  color: $white;
 
   &.--simple {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 450px;
 
     h4 {
       font-size: 6rem;
@@ -23,6 +24,14 @@
 
     p {
       color: $thirdColor;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      color: $white;
+      margin-top: 0;
+      font-weight: 800;
+      letter-spacing: 0.01em;
     }
 
   }

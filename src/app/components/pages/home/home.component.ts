@@ -127,12 +127,9 @@ export class HomeComponent implements OnInit {
 
     );
 
-    this.projectsService.getProjects().subscribe(
-      projects => {
-        this.projects = projects.slice(0,3);
-        console.log(this.projects);
-      }
-    )
+    this.projectsService.getProjects().subscribe(projects => {
+      this.projects = projects.slice(0,3);
+    })
   }
 
 }

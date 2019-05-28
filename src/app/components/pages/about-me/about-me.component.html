@@ -31,15 +31,15 @@
 
         <div class="flex-center">
           <a [routerLink]="['/acerca-de-mi']" class="btn">
-            <span>Ver curriculo </span>
+            <span>curriculo</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
           </a>
 
-          <a [routerLink]="['/acerca-de-mi']" class="btn">
-            <span>Ver cursos </span>
+          <a [routerLink]="['/contactame']" class="btn">
+            <span>Contactar</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
@@ -61,27 +61,61 @@
   <h2>Flujo de trabajo</h2>
 
   <div class="container">
+    <p class="sub-title">
+      Cuido de ti y tus proyectos, con un flujo de trabajo claro y estructurado. Esto es lo que te ofrezco si contratas mis servicios.
+    </p>
+  </div>
+
+
+  <div class="container">
 
     <div class="row --space-between --wrap">
 
       <div class="card --simple">
-        <h4>1</h4>
+        <div class="center">
+          <img class="icon center" src="assets/img/concepto.svg" alt="concepto al empezar un desarrollo web">
+        </div>
+
+        <h3 class="card__title second-color">Lluvia de ideas</h3>
+
         <p>
           En lugar de comenzar de inmediato, me tomo tiempo para elegir conceptos e ideas que podamos iterar juntos. Una vez que logramos un concepto, éste será el eje principal para empezar.
         </p>
       </div>
 
       <div class="card --simple">
-        <h4>2</h4>
+        <div class="center">
+          <img class="icon center" src="assets/img/lista.svg" alt="lista de ideas para un projecto">
+        </div>
+
+        <h3 class="card__title second-color">Preparación</h3>
+
         <p>
           Dependiendo del tamaño y la naturaleza del proyecto, repaso una lista de las cosas que deben tratarse para garantizar un proyecto perfecto y sin contratiempos.
         </p>
       </div>
 
       <div class="card --simple">
-        <h4>3</h4>
+        <div class="center">
+          <img class="icon center" src="assets/img/computer.svg" alt="adaptable a todos los dispositivos">
+        </div>
+
+        <h3 class="card__title second-color">Diseño adaptable</h3>
+
         <p>
           Diseño adpatable para todo tipos de dispositivos como computadoras, table y telefonos.
+        </p>
+      </div>
+
+      <div class="card --simple">
+        <div class="center">
+          <img class="icon center" src="assets/img/seo.svg" alt="seo y optimización">
+        </div>
+
+        <h3 class="card__title second-color">Seo y Optimización</h3>
+
+        <p>
+          Seo basico y optimización para que el proyecto tenga una buena puntuación en googlespeed entre otros.
         </p>
       </div>
 

@@ -15,22 +15,22 @@
 
   <div class="footer__menu">
     <h3>Redes Sociales</h3>
-    <div class="social-buttons">
+    <div class="social-buttons" *ngFor="let data of datas">
 
-      <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+      <a href="{{data.facebook}}" target="_blank" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
         <span class="social-button__inner">
           <i class="fab fa-facebook-f"></i>
         </span>
       </a>
 
-      <a href="#" class="social-buttons__button social-button social-button--instagram" aria-label="LinkedIn">
+      <a href="{{data.instagram}}" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="LinkedIn">
         <span class="social-button__inner">
           <i class="fab fa-instagram"></i>
         </span>
       </a>
 
 
-      <a href="#" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+      <a href="{{data.gitHub}}" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
         <span class="social-button__inner">
           <i class="fab fa-github"></i>
         </span>

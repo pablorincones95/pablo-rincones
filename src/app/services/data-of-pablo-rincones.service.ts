@@ -17,7 +17,7 @@ export class DataOfPabloRinconesService {
     this.datatOfPabloRinconesColletion = db.collection<DataOfPabloRincones>('dataOfPabloRincones');
   }
 
-  getProjects(): Observable<DataOfPabloRincones[]> {
+  getData(): Observable<DataOfPabloRincones[]> {
     this.dataOfPabloRincones = this.datatOfPabloRinconesColletion.snapshotChanges().pipe(
       map(actions => actions.map(a =>{
         const data = a.payload.doc.data() as DataOfPabloRincones;

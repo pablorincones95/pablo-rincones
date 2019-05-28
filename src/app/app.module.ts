@@ -26,6 +26,7 @@ import { ItemComponent } from './components/pages/portafolio/item/item.component
 
 /** Services */
 import { ProjectsService } from './services/projects.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ProjectsService } from './services/projects.service';
     AngularFireModule.initializeApp(environment.firestore, 'pablo-rincones'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     ProjectsService
