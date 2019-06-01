@@ -11,6 +11,8 @@ declare var particlesJS: any;
 })
 export class HomeComponent implements OnInit {
   projects: Project[];
+  load = true;
+
 
   constructor(private projectsService: ProjectsService) { }
 
@@ -129,6 +131,7 @@ export class HomeComponent implements OnInit {
 
     this.projectsService.getProjects().subscribe(projects => {
       this.projects = projects.slice(0,3);
+      this.load = false;
     })
   }
 

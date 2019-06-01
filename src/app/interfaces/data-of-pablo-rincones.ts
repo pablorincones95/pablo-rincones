@@ -4,4 +4,7 @@ export interface DataOfPabloRincones {
   url?: string;
   technology?: string;
   img?: string;
+  facebook?: string;
+  instagram?: string;
+  gitHub?: string;
 }

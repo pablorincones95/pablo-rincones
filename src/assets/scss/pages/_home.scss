@@ -6,5 +6,7 @@
 }
 
 footer {
-  margin-top: 150px;
+  &.home {
+    margin-top: 150px;
+  }
 }

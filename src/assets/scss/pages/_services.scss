@@ -1,0 +1,16 @@
+.services {
+  &.white-bg {
+    padding: 0;
+    margin: 50px 0;
+  }
+
+  &.main-color-bg {
+    margin-top: -10px;
+  }
+
+  .content-block {
+    &__img {
+      @include mq(m) { flex: 0.64; }
+    }
+  }
+}

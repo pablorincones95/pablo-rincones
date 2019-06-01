@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer home">
 
   <div class="footer__description">
     <h3><i class="fas fa-code"></i> Pablo Rincones</h3>
@@ -7,9 +7,9 @@
   <div class="footer__menu">
     <h3>Servicios</h3>
     <ul>
-      <li><a class="footer__menu__link" href="">Paginas Web</a></li>
-      <li><a class="footer__menu__link" href="">Aplicaciones Web</a></li>
-      <li><a class="footer__menu__link" href="">Asesorias</a></li>
+      <li><a class="footer__menu__link" [routerLink]="['/servicios']">Paginas Web</a></li>
+      <li><a class="footer__menu__link" [routerLink]="['/servicios']">Aplicaciones Web</a></li>
+      <li><a class="footer__menu__link" [routerLink]="['/servicios']">Asesorias</a></li>
     </ul>
   </div>
 
@@ -17,20 +17,20 @@
     <h3>Redes Sociales</h3>
     <div class="social-buttons" *ngFor="let data of datas">
 
-      <a href="{{data.facebook}}" target="_blank" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+      <a href="{{data.facebook}}" target="_blank" rel="nofollow noopener noreferrer" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
         <span class="social-button__inner">
           <i class="fab fa-facebook-f"></i>
         </span>
       </a>
 
-      <a href="{{data.instagram}}" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="LinkedIn">
+      <a href="{{data.instagram}}" target="_blank" rel="nofollow noopener noreferrer" class="social-buttons__button social-button social-button--instagram" aria-label="LinkedIn">
         <span class="social-button__inner">
           <i class="fab fa-instagram"></i>
         </span>
       </a>
 
 
-      <a href="{{data.gitHub}}" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+      <a href="{{data.gitHub}}" target="_blank" rel="nofollow noopener noreferrer" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
         <span class="social-button__inner">
           <i class="fab fa-github"></i>
         </span>

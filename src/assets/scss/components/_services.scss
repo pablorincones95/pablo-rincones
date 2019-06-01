@@ -1,7 +1,0 @@
-.services {
-  @include mq(m) { flex-wrap: wrap; }
-
-  .card {
-    margin-bottom: 2rem;
-  }
-}

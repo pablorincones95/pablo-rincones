@@ -4,4 +4,5 @@ export interface Project {
   description?: string;
   technology?: string;
   img?: string;
+  url?: string;
 }

@@ -8,6 +8,12 @@
 
 <section>
 
+  <div *ngIf="load" class="text-center flex-center">
+
+    <img class="loading-icon" src="assets/img/loading.svg" alt="Cargando">
+
+  </div>
+
   <div class="container">
 
     <div class="row --space-between --wrap">
@@ -31,7 +37,7 @@
           <p class="technology">
             tecnología: <span>{{project.technology}}</span>
           </p>
-          <a href="{{project.url}}" target="_blank" class="btn">
+          <a href="{{project.url}}" target="_blank" rel="nofollow noopener noreferrer" class="btn">
             <span>Ver mas</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>

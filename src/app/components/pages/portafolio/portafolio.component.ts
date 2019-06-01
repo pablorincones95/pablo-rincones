@@ -12,6 +12,7 @@ declare var particlesJS: any;
 export class PortafolioComponent implements OnInit {
 
   projects: Project[];
+  load = true;
 
   constructor(private projectsService: ProjectsService) { }
 
@@ -21,7 +22,7 @@ export class PortafolioComponent implements OnInit {
     this.projectsService.getProjects().subscribe(
       projects => {
         this.projects = projects;
-        console.log(this.projects);
+        this.load = false;
       }
     )
   }

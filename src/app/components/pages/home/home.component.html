@@ -16,17 +16,17 @@
 
 <div class="skew-c"></div>
 
-<section id="about-me" class="colour-block">
+<section id="about-me" class="main-color-bg">
 
   <div class="container">
 
     <h2>Sobre mi</h2>
 
-    <div class="about-me row --space-between">
+    <div class="content-block row --space-between">
 
-      <img class="about-me__img" src="assets/img/astronauta-planeta.svg" alt="ilustracion de un astronauta en un planeta">
+      <img class="content-block__img" src="assets/img/astronauta-planeta.svg" alt="ilustracion de un astronauta en un planeta">
 
-      <div class="about-me__text">
+      <div class="content-block__text">
 
         <p>
           Mi nombre es Pablo Rincones soy desarrollador web tengo experiecia para pequeñas y medianas empresas, hasta tiendas en linea con carritos de compra(WooCommerce).
@@ -60,7 +60,7 @@
 
 <div class="skew-cc"></div>
 
-<section class="white-block" id="services">
+<section class="white-bg" id="services">
 
   <h2>Servicios</h2>
 
@@ -71,7 +71,7 @@
       <div class="card">
 
         <div class="card__image-container">
-          <img class="card__image" src="assets/img/desarrollo-web.jpg" alt="desarrollo web">
+          <img class="card__image" src="assets/img/programador-web.jpg" alt="programador en la computadora">
         </div>
 
         <svg class="card__svg" viewBox="0 0 800 500">
@@ -154,7 +154,7 @@
 
 <div class="skew-c"></div>
 
-<section class="colour-block">
+<section class="main-color-bg">
     <h2>¿Por qué trabajar conmigo?</h2>
 
     <div class="container">
@@ -162,19 +162,19 @@
       <div class="row --space-between --wrap">
 
         <div class="container-icon">
-          <img src="assets/img/technical-support.svg" alt="imagen referente al mantenimiento web">
+          <img src="assets/img/mantenimiento.svg" alt="icono de  mantenimiento web">
           <h4>Mantenimiento</h4>
           <p>Mantenimiento a paginas y aplicaciones Web o cambios que quieran hacer.</p>
         </div>
 
         <div class="container-icon">
-          <img src="assets/img/computer.svg" alt="icono referente a un telefono movil">
+          <img src="assets/img/responsive.svg" alt="icono responsive">
           <h4>Responsive</h4>
           <p>Diseño adaptable para todos los dispositivos.</p>
         </div>
 
         <div class="container-icon">
-          <img src="assets/img/web-management.svg" alt="icono referenta al wordpress">
+          <img src="assets/img/pagina-administrable.svg" alt="icono pagina administrabel">
           <h4>Autoadminstrable</h4>
           <p>Paginas web autoadministrable con wordpress.</p>
         </div>
@@ -187,9 +187,15 @@
 
 <div class="skew-cc"></div>
 
-<section id="portafolio" class="white-block" >
+<section id="portafolio" class="white-bg" >
 
   <h2>Portafolio</h2>
+
+  <div *ngIf="load" class="text-center flex-center">
+
+    <img class="loading-icon" src="assets/img/loading.svg" alt="Cargando">
+  
+  </div>
 
   <div class="container">
 
@@ -214,7 +220,7 @@
           <p class="technology">
             tecnología: <span>{{project.technology}}</span>
           </p>
-          <a href="{{project.url}}" target="_blank" class="btn">
+          <a href="{{project.url}}" target="_blank" rel="nofollow noopener noreferrer" class="btn">
               <span>Ver mas</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
@@ -232,11 +238,11 @@
 <div class="skew-c"></div>
 
 
-<section class="cta colour-block">
+<section class="cta main-color-bg">
 
   <h4>¿Que esperas para tener tu pagina web?</h4>
   <a [routerLink]="['/contactame']" class="btn">
-      <span>contactar</span>
+      <span>contáctame</span>
       <svg width="13px" height="10px" viewBox="0 0 13 10">
         <path d="M1,5 L11,5"></path>
         <polyline points="8 1 12 5 8 9"></polyline>
@@ -245,4 +251,4 @@
 
 </section>
 
-<div class="skew-cc"></div>
+<div class="home skew-cc"></div>

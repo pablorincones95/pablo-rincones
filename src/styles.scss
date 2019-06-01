@@ -14,15 +14,18 @@
 @import 'assets/scss/components/navbar';
 @import 'assets/scss/components/particles';
 @import 'assets/scss/components/header-title';
+@import 'assets/scss/components/separators';
 @import 'assets/scss/components/button';
-@import 'assets/scss/components/about-me';
-@import 'assets/scss/components/services';
+@import 'assets/scss/components/content-block';
 @import 'assets/scss/components/card';
 @import 'assets/scss/components/container-icon';
 @import 'assets/scss/components/cta';
 @import 'assets/scss/components/form';
 @import 'assets/scss/components/footer';
+@import 'assets/scss/components/slider';
 
 /** Pages **/
 @import 'assets/scss/pages/home';
+@import 'assets/scss/pages/about-me';
+@import 'assets/scss/pages/services';
 @import 'assets/scss/pages/portafolio';
