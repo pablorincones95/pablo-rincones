@@ -23,10 +23,14 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ItemComponent } from './components/pages/portafolio/item/item.component';
+import { SidenavComponent } from './components/shared/sidenav/sidenav.component';
 
 /** Services */
 import { ProjectsService } from './services/projects.service';
+import { CertificatesService } from './services/certificates.service';
+import { DataOfPabloRinconesService } from './services/data-of-pablo-rincones.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
+
 
 
 @NgModule({
@@ -41,6 +45,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AboutMeComponent,
     NotFoundComponent,
     ItemComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    ProjectsService
+    ProjectsService,
+    CertificatesService,
+    DataOfPabloRinconesService
   ],
   bootstrap: [AppComponent]
 })

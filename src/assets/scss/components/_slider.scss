@@ -14,23 +14,23 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
-	background: $mainColor;
+	background: $white;
 	box-shadow: $shadowImg;
-	height: 100px;
+	height: auto;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
 	width: 960px;
 
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
+	// &::before,
+	// &::after {
+	// 	@include white-gradient;
+	// 	content: "";
+	// 	height: 400px;
+	// 	position: absolute;
+	// 	width: 450px;
+	// 	z-index: 2;
+	// }
 
 	&::after {
 		right: 0;
@@ -50,7 +50,13 @@ $animationSpeed: 40s;
 	}
 
 	.slide {
-		height: 100px;
-		width: 250px;
-	}
+		height: 413px;
+    width: 450px;
+    padding: 2rem;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 700;
+  }
 }

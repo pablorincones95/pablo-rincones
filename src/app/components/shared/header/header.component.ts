@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 declare const toggleNav: any;
 
 @Component({
@@ -8,6 +8,8 @@ declare const toggleNav: any;
 })
 export class HeaderComponent implements OnInit {
 
+  d = document;
+
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +18,18 @@ export class HeaderComponent implements OnInit {
 
   onClick() {
     toggleNav();
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event) {
+    const navbar = this.d.querySelector('.navbar');
+    const top = event.srcElement.scrollingElement.scrollTop > 100 || document.documentElement.scrollTop > 100;
+
+    if (top) {
+      navbar.classList.add('--scroll');
+    } else {
+      navbar.classList.remove('--scroll');
+    }
   }
 
 }

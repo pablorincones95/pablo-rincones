@@ -195,3 +195,27 @@
 </section>
 
 <div class="skew-cc"></div>
+
+<section class="white-bg">
+
+  <h2>Certificados</h2>
+
+  <div class="container"><p class="sub-title">Certificados de cursos online.</p></div>
+
+  <div *ngIf="load" class="text-center flex-center"><img class="loading-icon" src="assets/img/loading.svg" alt="Cargando"></div>
+
+
+  <div class="slider">
+
+    <div class="slide-track">
+
+      <div *ngFor="let certificate of certificates" class="slide">
+        <img src="{{certificate.img}}" height="100" width="250" alt="" />
+        <p>{{certificate.name}}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

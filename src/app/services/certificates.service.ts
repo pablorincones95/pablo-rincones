@@ -12,10 +12,10 @@ export class CertificatesService {
   certificates: Observable<Certificate[]>;
 
   constructor( private db: AngularFirestore ) {
-    this.certificatesCollection = db.collection<Certificate>('dataOfPabloRincones');
+    this.certificatesCollection = db.collection<Certificate>('certificates', ref => ref.orderBy('create', 'desc'));
   }
 
-  getProjects(): Observable<Certificate[]> {
+  getCertificates(): Observable<Certificate[]> {
     this.certificates = this.certificatesCollection.snapshotChanges().pipe(
       map(actions => actions.map(a =>{
         const data = a.payload.doc.data() as Certificate;

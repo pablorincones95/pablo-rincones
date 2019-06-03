@@ -1,15 +1,21 @@
 <header class="header">
-    <nav class="navbar">
-          <span class="navbar__btn" (click)="onClick()" type="button"><i class="fas fa-bars"></i></span>
-          <a [routerLink]="['/']" class="navbar__brand"><i class="fas fa-code"></i> Pablo Rincones</a>
-          <div class="navbar__menu">
-            <ul>
-              <li><a [routerLink]="['/acerca-de-mi']" routerLinkActive="active" id="about-me">Sobre mi</a></li>
-              <li><a [routerLink]="['/servicios']" routerLinkActive="active" id="services">Servicios</a></li>
-              <li><a [routerLink]="['/portafolio']" routerLinkActive="active" id="portafolio">Portafolio</a></li>
-              <li><a [routerLink]="['/contactame']" routerLinkActive="active"  id="contact">Contáctame</a></li>
-            </ul>
-          </div>
+  <nav class="navbar" (scroll)="onScroll($event)">
 
-    </nav>
+    <span class="navbar__btn" (click)="onClick()" type="button"><i class="fas fa-bars"></i></span>
+
+    <a [routerLink]="['/']" class="navbar__brand"><i class="fas fa-code"></i> Pablo Rincones</a>
+
+    <div class="navbar__menu">
+
+      <ul>
+        <li><a [routerLink]="['/acerca-de-mi']" routerLinkActive="active" id="about-me">Sobre mi</a></li>
+        <li><a [routerLink]="['/servicios']" routerLinkActive="active" id="services">Servicios</a></li>
+        <li><a [routerLink]="['/portafolio']" routerLinkActive="active" id="portafolio">Portafolio</a></li>
+        <li><a [routerLink]="['/contactame']" routerLinkActive="active"  id="contact">Contáctame</a></li>
+      </ul>
+
+    </div>
+
+
+  </nav>
 </header>
