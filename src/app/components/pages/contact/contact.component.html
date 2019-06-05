@@ -77,45 +77,78 @@
 
           <div class="screen-body-item">
 
-            <div class="app__form">
+            <form [formGroup]="contactForm" (ngSubmit)="emailSend()" class="app__form">
 
               <div class="app__form__group">
 
-                <input class="app__form__control" placeholder="NOMBRE">
+                <input
+                  class="app__form__control"
+                  placeholder="NOMBRE"
+                  formControlName="name"
+                >
+
+
+                <div class="error-input" *ngIf="name.invalid && name.touched">
+                  campo vacio
+                </div>
 
               </div>
 
               <div class="app__form__group">
 
-                <input class="app__form__control" placeholder="CORREO">
+                <input
+                  class="app__form__control"
+                  placeholder="CORREO"
+                  formControlName="email"
+                >
+
+                <div class="error-input" *ngIf="email.invalid && email.touched">
+                  Correo invalido
+                </div>
 
               </div>
 
               <div class="app__form__group">
 
-                <input class="app__form__control" placeholder="ASUNTO">
+                <input
+                  class="app__form__control"
+                  placeholder="ASUNTO"
+                  formControlName="subject"
+                >
+
+                <div class="error-input" *ngIf="subject.invalid && subject.touched">
+                  campo vacio
+                </div>
 
               </div>
 
               <div class="app__form__group message">
 
-                <input class="app__form__control" placeholder="MENSAJE">
+                <input
+                  class="app__form__control"
+                  placeholder="MENSAJE"
+                  formControlName="message"
+                >
+
+                <div class="error-input" *ngIf="message.invalid && message.touched">
+                  campo vacio
+                </div>
 
               </div>
 
               <div class="app__form__group buttons">
 
-                <a class="btn">
+                <button type="submit" [disabled]="contactForm.invalid" class="btn">
                   <span>ENVIAR</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
                   </svg>
-                </a>
+                </button>
 
               </div>
 
-            </div>
+            </form>
 
           </div>
 

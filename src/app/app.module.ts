@@ -1,12 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /** Firebase */
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,12 +27,18 @@ import { AboutMeComponent } from './components/pages/about-me/about-me.component
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ItemComponent } from './components/pages/portafolio/item/item.component';
 import { SidenavComponent } from './components/shared/sidenav/sidenav.component';
+import { ProjectComponent } from './components/dashboard/project/project.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 
 /** Services */
 import { ProjectsService } from './services/projects.service';
 import { CertificatesService } from './services/certificates.service';
 import { DataOfPabloRinconesService } from './services/data-of-pablo-rincones.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
+
+/** Directives */
+import { DropzoneDirective } from './directives/dropzone.directive';
 
 
 
@@ -45,15 +54,20 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AboutMeComponent,
     NotFoundComponent,
     ItemComponent,
-    SidenavComponent
+    SidenavComponent,
+    ProjectComponent,
+    DashboardComponent,
+    DropzoneDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firestore, 'pablo-rincones'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    FormsModule,
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
